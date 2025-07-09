@@ -24,3 +24,11 @@ module.exports = {
         })
     ]
 };
+
+devServer: {
+  static: {
+    directory: path.join(__dirname, 'src'), // путь к папке с index.html
+  },
+  compress: true,
+  port: 9000,
+};
